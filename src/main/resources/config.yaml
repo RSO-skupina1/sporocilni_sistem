@@ -1,0 +1,22 @@
+kumuluzee:
+  name: sporocilni_sistem-service
+  env:
+    name: dev
+  version: 1.0.0
+
+  server:
+    base-url: http://localhost:8080
+    http:
+      port: 8080
+
+  datasources:
+    - jndi-name: jdbc/SporocilniSistemDS
+      connection-url: jdbc:postgresql://192.168.99.100:5432/sporocila
+      username: postgres
+      password: postgres
+      max-pool-size: 20
+
+  rest-properties:
+    external-dependencies:
+      katalog_profilov-service:
+        enabled: true
