@@ -20,10 +20,10 @@ public class Sporocilo {
 
     private Date poslano;
 
-    @Column(name = "posiljatelj_id")
+    //@Column(name = "posiljatelj_id")
     private String posiljateljId;
 
-    @Column(name = "prejemnik_id")
+    //@Column(name = "prejemnik_id")
     private String prejemnikId;
 
     public String getId() {
